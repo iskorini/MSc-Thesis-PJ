@@ -1,5 +1,8 @@
 *.h5
-*/logs
+*/logs*
+*.out*
+*wandb*
+*annotated_test*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
