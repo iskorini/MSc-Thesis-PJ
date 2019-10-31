@@ -6,7 +6,7 @@ import progressbar
 #/data/datasets/FLIR_ADAS/FLIR_ADAS/training/Annotations
 #/data/datasets/FLIR_ADAS/FLIR_ADAS/validation/Annotations
 if __name__ == "__main__":
-    annotations_path = '/data/datasets/FLIR_ADAS/FLIR_ADAS/validation/Annotations/*.json'
+    annotations_path = '/data/datasets/FLIR_ADAS/FLIR_ADAS/training/Annotations/*.json'
     id_to_name = {
         '1': 'People',
         '2': 'Bicycles',
@@ -18,13 +18,13 @@ if __name__ == "__main__":
     bar = progressbar.ProgressBar(maxval=tot, widgets=[progressbar.Bar('=', '[', ']'), ' ', progressbar.Percentage()])
     i = 0
     bar.start()
-    with open('thermal_validation_KAIST_TEST.csv', 'w' ) as csvfile:
+    with open('thermal_validation_KAIST_TRAIN_WCARS.csv', 'w' ) as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         for file_name in glob.iglob(annotations_path):
             data = json.load(open(file_name))
             if len(data['annotation'])>0:
                 for i in range(len(data['annotation'])):
-                    if data['annotation'][i]['category_id'] in ['1', '2']:
+                    if data['annotation'][i]['category_id'] in ['1', '2', '3']:
                         x1, y1 = data['annotation'][i]['segmentation'][0][0],data['annotation'][i]['segmentation'][0][1]
                         x2, y2 = data['annotation'][i]['segmentation'][0][4],data['annotation'][i]['segmentation'][0][5]
                         filewriter.writerow([file_name.replace('Annotations', 'PreviewData')]+[x1, y1, x2, y2]+[id_to_name[data['annotation'][i]['category_id']]])
