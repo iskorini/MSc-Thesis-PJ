@@ -1,9 +1,24 @@
 *.h5
+*DS_Store
 */logs*
 *.out*
 *wandb*
 *annotated_test*
 *weights*
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/images/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set05/V000/annotations/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set05/V000/lwir/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set05/V000/visible/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set06/V001/annotations/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set06/V001/lwir/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set06/V001/visible/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set08/V000/annotations/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set08/V000/lwir/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set08/V000/visible/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set09/V000/annotations/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set09/V000/lwir/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set09/V000/visible/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/via-2.0.8/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
