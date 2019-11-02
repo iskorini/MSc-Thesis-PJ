@@ -3,8 +3,8 @@ import random
 from pathlib import Path
 import shutil
 
-source = Path('./images/set09/v000/annotations')
-destination = Path('./random/set09/v000/annotations')
+source = Path('./images/set00/v000/annotations')
+destination = Path('./random/set00/v000/annotations')
 
 if __name__ == "__main__":
     for file in random.sample(os.listdir(source), 200):

@@ -1,12 +1,13 @@
 Oggetti della classe cars sono stati annotati manualmente tramite software VGG VIA.
+- SET00/V000: GIORNO
 - SET05/V000: NOTTE
 - SET06/V001: GIORNO
 - SET08/V000: GIORNO
 - SET09/V000: NOTTE
 
-SET05/V000 e SET06/V001 per finetuning
+SET05/V000 e SET00/V000 per finetuning
 SET08/V000 e SET09/V000 per test
 
 ds/test_no_people.csv: prendo solo le classi cars, cyclist e person sui SET08/V000 e SET09/V000
 ds/test_w_people.csv: prendo solo le classi cars, cyclist, person e people (rinomino a person) sui SET08/V000 e SET09/V000
-ds/train_no_people: prendo solo le classi cars, cyclist e person sui SET05/V000 e SET06/V001
+ds/train_no_people: prendo solo le classi cars, cyclist e person sui SET05/V000 e SET00/V000
