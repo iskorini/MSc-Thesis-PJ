@@ -6,7 +6,7 @@ from pathlib import Path
 import glob
 
 if __name__ == '__main__':
-    sets = ['set05/V000', 'set06/V001']
+    sets = ['set05/V000', 'set00/V000']
     with open('./ds/train_no_people.csv', 'w' ) as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         for set in sets:
@@ -23,7 +23,10 @@ if __name__ == '__main__':
                             x1, y1 = infos[1], infos[2]
                             x2, y2 = str((int(infos[1]) + int(infos[3])) - 1), str((int(infos[2]) + int(infos[4])) - 1)
                             filewriter.writerow([str(path)] + [x1, y1, x2, y2] + [infos[0].replace('?', '')])
+                elif len(ann) == 2:
+                    filewriter.writerow([str(path), '', '', '', '', ''])
                 for index, row in df.iterrows():
+                    a = a+1
                     if row['region_count'] > 0:
                         data = row['region_shape_attributes'].replace('{', '').replace('}', '').replace('"', '').split(
                             ',')
@@ -31,7 +34,8 @@ if __name__ == '__main__':
                         y = int(data[2].replace('y:', ''))
                         x2 = int(data[3].replace('width:', '')) + x
                         y2 = int(data[4].replace('height:', '')) + y
-                        filewriter.writerow([str(path)] + [x, y, x2, y2] + ['car'])
-                    elif len(ann) == 2 and row['region_count'] == 0:
+                        filewriter.writerow([str(path)] + [x, y, x2, y2] + ['cars'])
+                    else:
                         filewriter.writerow([str(path), '', '', '', '', ''])
+
 

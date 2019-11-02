@@ -19,6 +19,7 @@ Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set08/V000/visible/
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set09/V000/annotations/
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set09/V000/lwir/
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set09/V000/visible/
+Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set00/*
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/via-2.0.8/
 # Byte-compiled / optimized / DLL files
 __pycache__/
