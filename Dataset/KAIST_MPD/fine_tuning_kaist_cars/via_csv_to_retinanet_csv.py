@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 import csv
 
-source_path = ''
+source_path = './Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set09/V000/via_export_csv.csv'
 dataset_path = Path('/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set09/V000/lwir')
 
 if __name__ == "__main__":
