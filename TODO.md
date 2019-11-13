@@ -89,4 +89,3 @@ nohup retinanet-evaluate --score-threshold 0.30 --save-path ./KAIST_FROM_FLIR  -
   - mAP using the weighted average of precisions among classes: 0.4863
   - mAP: 0.3149
   
-- [ ]  test dei pesi da run *FLIR
