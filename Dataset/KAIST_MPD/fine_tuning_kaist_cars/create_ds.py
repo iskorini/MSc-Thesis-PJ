@@ -6,8 +6,8 @@ from pathlib import Path
 import glob
 
 if __name__ == '__main__':
-    sets = ['set05/V000', 'set00/V000']
-    with open('./ds/train_no_people.csv', 'w' ) as csvfile:
+    sets = ['set00/V000']
+    with open('./ds/validation.csv', 'w' ) as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         for set in sets:
             dataset_path = Path('/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/'+set+'/lwir')
@@ -26,7 +26,6 @@ if __name__ == '__main__':
                 elif len(ann) == 2:
                     filewriter.writerow([str(path), '', '', '', '', ''])
                 for index, row in df.iterrows():
-                    a = a+1
                     if row['region_count'] > 0:
                         data = row['region_shape_attributes'].replace('{', '').replace('}', '').replace('"', '').split(
                             ',')
