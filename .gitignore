@@ -10,7 +10,12 @@
 *.vscode*
 *.mp4*
 */RFI/annotated_frames
-*/RFI/frames*
+*/RFI/frames/ds/frames_0/
+*/RFI/frames/ds/frames_1/
+*/RFI/frames/ds/frames_2/
+*/RFI/frames/*frames_0*
+*/RFI/frames/*frames_1*
+*/RFI/frames/*frames_2*
 */RFI/frames_png*
 *Dataset/autoaugment*
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/images/
