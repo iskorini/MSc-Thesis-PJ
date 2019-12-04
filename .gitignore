@@ -8,6 +8,11 @@
 *weights*
 *venv*
 *.vscode*
+*.mp4*
+*/RFI/annotated_frames
+*/RFI/frames*
+*/RFI/frames_png*
+*Dataset/autoaugment*
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/images/
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set05/V000/annotations/
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set05/V000/lwir/

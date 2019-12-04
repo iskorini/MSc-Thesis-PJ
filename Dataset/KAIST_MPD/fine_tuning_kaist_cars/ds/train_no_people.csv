@@ -25,7 +25,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00590.jpg,409,214,445,245,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02542.jpg,,,,,
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02542.jpg,266,215,337,270,cars
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02542.jpg,-1,228,101,302,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02542.jpg,0,228,101,302,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02542.jpg,86,224,158,272,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02542.jpg,175,216,215,240,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02542.jpg,137,218,180,254,cars
@@ -54,7 +54,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01937.jpg,86,228,123,259,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01937.jpg,38,223,96,246,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00234.jpg,,,,,
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00234.jpg,-1,243,63,346,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00234.jpg,0,243,63,346,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00234.jpg,512,244,640,366,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00778.jpg,,,,,
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00778.jpg,2,228,173,430,cars
@@ -180,7 +180,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02801.jpg,257,227,334,289,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02801.jpg,230,222,260,242,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02430.jpg,,,,,
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02430.jpg,-1,254,67,341,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02430.jpg,0,254,67,341,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02430.jpg,125,232,183,278,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02430.jpg,476,258,635,361,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02430.jpg,446,247,536,302,cars
@@ -196,11 +196,11 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02222.jpg,124,205,164,315,person
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02222.jpg,70,211,130,342,person
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02222.jpg,475,220,499,269,person
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02222.jpg,-1,212,105,291,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02222.jpg,0,212,105,291,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02222.jpg,518,259,640,440,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02544.jpg,,,,,
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02544.jpg,266,215,337,270,cars
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02544.jpg,-1,228,101,302,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02544.jpg,0,228,101,302,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02544.jpg,86,224,158,272,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02544.jpg,175,216,215,240,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02544.jpg,137,218,180,254,cars
@@ -262,7 +262,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01846.jpg,,,,,
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01846.jpg,,,,,
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02432.jpg,,,,,
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02432.jpg,-1,254,67,341,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02432.jpg,0,254,67,341,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02432.jpg,125,232,183,278,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02432.jpg,499,258,635,361,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02432.jpg,446,247,536,302,cars
@@ -419,7 +419,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00122.jpg,305,223,384,286,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00122.jpg,438,230,495,270,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00136.jpg,,,,,
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00136.jpg,-1,217,251,446,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00136.jpg,0,217,251,446,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00136.jpg,276,224,345,292,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00136.jpg,413,229,473,274,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01214.jpg,122,207,200,391,person
@@ -584,7 +584,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01207.jpg,160,205,231,378,person
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01207.jpg,237,215,301,372,person
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01207.jpg,33,242,174,342,cars
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01207.jpg,-1,298,74,450,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01207.jpg,0,298,74,450,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01207.jpg,353,228,428,268,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01548.jpg,145,233,217,417,person
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01548.jpg,271,207,309,302,person
@@ -914,7 +914,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01121.jpg,395,242,449,281,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I01121.jpg,565,235,640,346,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02428.jpg,,,,,
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02428.jpg,-1,254,67,341,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02428.jpg,0,254,67,341,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02428.jpg,125,232,183,278,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02428.jpg,476,258,635,361,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02428.jpg,446,247,536,302,cars
@@ -978,7 +978,7 @@
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00216.jpg,124,238,240,313,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I00216.jpg,113,230,137,281,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02429.jpg,,,,,
-/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02429.jpg,-1,254,67,341,cars
+/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02429.jpg,0,254,67,341,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02429.jpg,125,232,183,278,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02429.jpg,476,258,635,361,cars
 /data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/set05/V000/lwir/I02429.jpg,446,247,536,302,cars
