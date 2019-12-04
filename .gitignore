@@ -10,6 +10,7 @@
 *.vscode*
 *.mp4*
 */RFI/annotated_frames
+*/RFI/frames/image*
 */RFI/frames/ds/frames_0/
 */RFI/frames/ds/frames_1/
 */RFI/frames/ds/frames_2/
