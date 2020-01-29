@@ -4,10 +4,12 @@ import pandas as pd
 import csv
 from pathlib import Path
 import glob
-
+#05, 00 -> TRAIN
+#08, 09 -> TEST
+#06 -> VALIDATION
 if __name__ == '__main__':
-    sets = ['set00/V000']
-    with open('./ds/validation.csv', 'w' ) as csvfile:
+    sets = ['set06/V001']
+    with open('./ds/val_w_people.csv', 'w' ) as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         for set in sets:
             dataset_path = Path('/data/datasets/KAIST_MPD/rgbt-ped-detection/data/kaist-rgbt/images/'+set+'/lwir')
@@ -19,10 +21,10 @@ if __name__ == '__main__':
                 if len(ann) > 2:
                     for i in range(1, len(ann) - 1):
                         infos = ann[i].split()
-                        if infos[0].replace('?','') != 'people':
-                            x1, y1 = infos[1], infos[2]
-                            x2, y2 = str((int(infos[1]) + int(infos[3])) - 1), str((int(infos[2]) + int(infos[4])) - 1)
-                            filewriter.writerow([str(path)] + [x1, y1, x2, y2] + [infos[0].replace('?', '')])
+                        #if infos[0].replace('?','') != 'people':
+                        x1, y1 = infos[1], infos[2]
+                        x2, y2 = str((int(infos[1]) + int(infos[3])) - 1), str((int(infos[2]) + int(infos[4])) - 1)
+                        filewriter.writerow([str(path)] + [x1, y1, x2, y2] + [infos[0].replace('?', '')])
                 elif len(ann) == 2:
                     filewriter.writerow([str(path), '', '', '', '', ''])
                 for index, row in df.iterrows():
@@ -36,5 +38,3 @@ if __name__ == '__main__':
                         filewriter.writerow([str(path)] + [x, y, x2, y2] + ['cars'])
                     else:
                         filewriter.writerow([str(path), '', '', '', '', ''])
-
-
