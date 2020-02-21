@@ -17,19 +17,19 @@ NOTTE:
    - 14641 instances of class person with average precision: 0.4440
    - 578 instances of class cyclist with average precision: 0.0440
    - mAP using the weighted average of precisions among classes: 0.4288
-   - mAP: 0.2440
+   - mAP: 0.2440 -> scritto
 
-- [x] TEST DEI PESI DI 2 SU FLIR TERMICO: annotated_test_FLIR
+- [x] TEST DEI PESI DI 2 SU FLIR TERMICO: annotated_test_FLIR (testo i pesi di kaist su flir) -> scritto 
+
+- [x] ADDESTRAMENTO PARTITO DAI PESI DI 2 SU FLIR TERMICO: ANNOTATED_FLIR_TRAINED -> scritto train da scrivere test
 
 
-- [x] ADDESTRAMENTO PARTITO DAI PESI DI 2 SU FLIR TERMICO: ANNOTATED_FLIR_TRAINED
-
-
-- [x] 5 ADDESTRAMENTO PARTITO DAI PESI DI COCO SU FLIR TERMICO: FLIR_FROM_COCO
+- [x] 5 ADDESTRAMENTO PARTITO DAI PESI DI COCO SU FLIR TERMICO: FLIR_FROM_COCO -> scritto
 
 
 - [x] TEST DEI PESI DI 5 SU KAIST TERMICO: KAIST_FROM_FLIR
 nohup retinanet-evaluate --score-threshold 0.30 --save-path ./KAIST_FROM_FLIR  --convert-model --gpu 0 csv KAIST_MPD/imageSets/csv_files_NO_PEOPLE/lwir/test-all-01.csv KAIST_MPD/class_name_to_id_NO_PEOPLE.csv  weights/FLIR_FROM_COCO_43.h5 &
+-> da scrivere
 
 ## Per 29/10
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -54,10 +54,10 @@ nohup retinanet-evaluate --score-threshold 0.30 --save-path ./KAIST_FROM_FLIR  -
 ---------------------------------------------------------------------------------------------------------------------------------
 
 - [x] annotare le auto manualmente su kaist
-- [ ] normalizzare immagini di giorno e notte su kaist (non posso farlo su flir): creato script per calcolare la media, ma riguardare e chiedere per dubbi
 - [x] ri-addestrare: 
    - fatto fine tuning su kaist partendo dai pesi di FLIR
    - Nome run *FINE TUNING: FLIR [CARS] -> KAIST_MPD 2*
+
 - [x] test di pesi da run *FINE TUNING: FLIR [CARS] -> KAIST_MPD 2* su set annotato manualmente in KAIST: 
   - 755 instances of class person with average precision: 0.4964
   - 15 instances of class cyclist with average precision: 0.0333
@@ -163,7 +163,7 @@ Prove effettuate con policy v1:
 
 Prove effettuate con policy v2:
 - [x] epoca 05:
-   - 755 instances of class person with average precision: *0.5241*
+   - 755 instances of class person with average precision: *0.5241* (MIGLIORE SULLE PERSONE!)
    - 15 instances of class cyclist with average precision: 0.0000
    - 1088 instances of class cars with average precision: 0.6506
    - mAP using the weighted average of precisions among classes: *0.5940*
@@ -293,3 +293,44 @@ Prove effettuate con policy v2:
   - 1088 instances of class cars with average precision: 0.5399
   - mAP using the weighted average of precisions among classes: 0.5157
   - mAP: 0.3437
+
+
+## Test dei pesi migliori sulla classe PERSON (POLICY V2 EPOCA 05)
+- [x] Policy v2 epoca 05 (threshold 0.3):
+   - 647 instances of class person with average precision: 0.5084
+   - 15 instances of class cyclist with average precision: 0.0000
+   - 1088 instances of class cars with average precision: 0.6510
+   - mAP using the weighted average of precisions among classes: 0.5927
+   - mAP: 0.3865
+- [x] Policy v2 epoca 05 (threshold 0.5):
+   - 647 instances of class person with average precision: 0.4754
+   - 15 instances of class cyclist with average precision: 0.0000
+   - 1088 instances of class cars with average precision: 0.6048
+   - mAP using the weighted average of precisions among classes: 0.5518
+   - mAP: 0.3601
+
+- [x] manual_annotations08.h5(threshold 0.3):
+   - 647 instances of class person with average precision: 0.4795
+   - 15 instances of class cyclist with average precision: 0.1000
+   - 1088 instances of class cars with average precision: 0.6626663816638166381
+   - mAP using the weighted average of precisions among classes: 0.5901
+   - mAP: 0.4140
+
+
+### Test dopo ottimizzazione di randaugment partendo da manual_annotations_08.h5
+- N = 3
+- M = 26
+## test fatto su set manuale senza people:
+- [x] Miglior risultato ottenuto all'epoca 2 (threshold 0.3):
+   - 647 instances of class person with average precision: 0.476908
+   - 15 instances of class cyclist with average precision: 0.033333
+   - 1088 instances of class cars with average precision: 0.664653
+   - mAP using the weighted average of precisions among classes: 0.589830
+   - mAP: 0.391631
+## test fatto su set manuale con people:
+- [x] Miglior risultato ottenuto all'epoca 2 (threshold 0.3):
+   - 755 instances of class person with average precision: 0.476908
+   - 15 instances of class cyclist with average precision: 0.033333
+   - 1088 instances of class cars with average precision: 0.663814
+   - mAP using the weighted average of precisions among classes: 0.583137
+   - mAP: 0.3916
