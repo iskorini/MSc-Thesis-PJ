@@ -15,8 +15,11 @@ import cv2
 import progressbar
 from rtree import index
 from natsort import natsorted
+<<<<<<< HEAD
 from keras.utils import multi_gpu_model
 
+=======
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
 #credits: https://github.com/fizyr/keras-retinanet
 
 def compute_intersection_over_union(box1, box2):
@@ -82,9 +85,9 @@ def create_generator(annotations, classes):
     return generator
 
 def get_all_detections(model, generator, path_list, score_threshold):
-    all_detections_metrics = [[None for i in range(generator.num_classes()) if generator.has_label(i)] for j in range(generator.size())]
+    all_detections_metrics = [[None for i in range(generator.num_classes()) if generator.has_label(i)] for j in range(generator.size()-9400)]
     all_detections = []
-    for i in progressbar.progressbar(range(generator.size()), prefix='Running network: '):
+    for i in progressbar.progressbar(range(generator.size()-9400), prefix='Running network: '):
         image    = generator.load_image(path_list[i][0])
         boxes, scores, labels = model.predict_on_batch(np.expand_dims(image, axis=0))[:3]
         indices = np.where(scores[0, :] > score_threshold)[0]
@@ -103,14 +106,22 @@ def get_all_detections(model, generator, path_list, score_threshold):
 
 def get_new_detections_1(all_detections, iou_threshold, iou_frames, generator):
     new_detections = []
+<<<<<<< HEAD
     new_detections_metric = [[None for i in range(generator.num_classes()) if generator.has_label(i)] for j in range(generator.size())]
+=======
+    new_detections_metric = [[None for i in range(generator.num_classes()) if generator.has_label(i)] for j in range(generator.size()-9400)]
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
     for i in range(iou_frames):
         new_detections.append([np.array(all_detections[i][:, 0:4]), np.array(all_detections[i][:, 4]), np.array(all_detections[i][:, 5], dtype=np.int)])
         for label in range(generator.num_classes()):
             if not generator.has_label(label):
                 continue
             new_detections_metric[i][label] = all_detections[i][all_detections[i][:, -1] == label, :-1]
+<<<<<<< HEAD
     for i in progressbar.progressbar(range(iou_frames, generator.size(), 1), prefix='Applying IoU over time: '):
+=======
+    for i in progressbar.progressbar(range(iou_frames, generator.size()-9400, 1), prefix='Applying IoU over time: '):
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
         partial_detections = np.array(all_detections[i-iou_frames:i])
         frame_detection = iou_evaluation(partial_detections, iou_threshold)
         new_detections.append(frame_detection)
@@ -127,14 +138,22 @@ def get_new_detections_1(all_detections, iou_threshold, iou_frames, generator):
 
 def get_new_detections_2(all_detections, iou_threshold, iou_frames, generator):
     new_detections = []
+<<<<<<< HEAD
     new_detections_metric = [[None for i in range(generator.num_classes()) if generator.has_label(i)] for j in range(generator.size())]
+=======
+    new_detections_metric = [[None for i in range(generator.num_classes()) if generator.has_label(i)] for j in range(generator.size()-9400)]
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
     for i in range(iou_frames):
         new_detections.append([np.array(all_detections[i][:, 0:4]), np.array(all_detections[i][:, 4]), np.array(all_detections[i][:, 5], dtype=np.int)])
         for label in range(generator.num_classes()):
             if not generator.has_label(label):
                 continue
             new_detections_metric[i][label] = all_detections[i][all_detections[i][:, -1] == label, :-1]
+<<<<<<< HEAD
     for i in progressbar.progressbar(range(iou_frames, generator.size(), iou_frames), prefix='Applying IoU over time: '):
+=======
+    for i in progressbar.progressbar(range(iou_frames, generator.size()-9400, iou_frames), prefix='Applying IoU over time: '):
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
         partial_detections = np.array(all_detections[i-iou_frames:i])
         frame_detection = iou_evaluation(partial_detections, iou_threshold)
         for i in range(iou_frames):
@@ -153,7 +172,11 @@ def get_new_detections_2(all_detections, iou_threshold, iou_frames, generator):
 
 
 def save_images(path_list, detections, generator, score_threshold, save_path, iou_frames):
+<<<<<<< HEAD
     for i in progressbar.progressbar(range(generator.size()), prefix='Saving images: '):
+=======
+    for i in progressbar.progressbar(range(generator.size()-9400), prefix='Saving images: '):
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
         #draw_annotations(generator.load, generator.load_annotations(i), label_to_name=generator.label_to_name)
         image = generator.load_image(path_list[i][0])
         draw_detections(
@@ -180,7 +203,11 @@ def evaluate(generator, detections, iou_threshold):
         scores          = np.zeros((0,))
         num_annotations = 0.0
 
+<<<<<<< HEAD
         for i in range(generator.size()):
+=======
+        for i in range(generator.size()-9400):
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
             detections           = all_detections[i][label]
             annotations          = all_annotations[i][label]
             num_annotations     += annotations.shape[0]
@@ -232,9 +259,15 @@ def evaluate(generator, detections, iou_threshold):
 
 def main():
     setup_gpu(1)
+<<<<<<< HEAD
     score_threshold = 0.9
     iou_frames = 5
     iou_ot_threshold = 0.3
+=======
+    score_threshold = 0.3
+    iou_frames = 5
+    iou_ot_threshold = 0.1
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
     iou_threshold = 0.5
     dataset_path = Path('/data/students_home/fschipani/thesis/MSc-Thesis-PJ/Dataset/RFI')
     annotations = dataset_path.joinpath('test_video/video1/dataset.csv')
@@ -250,6 +283,13 @@ def main():
     path_list = natsorted(path_list, key=lambda y: y[1])
     all_detections, all_detections_metrics = get_all_detections(model, generator, path_list, score_threshold)
     new_detections, new_detections_metrics = get_new_detections_2(all_detections, iou_ot_threshold, iou_frames, generator)
+<<<<<<< HEAD
+=======
+    print(len(new_detections))
+    print(new_detections[7])
+    print('----------')
+    print(new_detections[0])
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
     save_images(path_list, new_detections, generator, score_threshold, save_path, iou_frames)
 
 if __name__ == "__main__":

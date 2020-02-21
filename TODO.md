@@ -312,6 +312,7 @@ Prove effettuate con policy v2:
 - [x] manual_annotations08.h5(threshold 0.3):
    - 647 instances of class person with average precision: 0.4795
    - 15 instances of class cyclist with average precision: 0.1000
+<<<<<<< HEAD
    - 1088 instances of class cars with average precision: 0.6626663816638166381
    - mAP using the weighted average of precisions among classes: 0.5901
    - mAP: 0.4140
@@ -334,3 +335,8 @@ Prove effettuate con policy v2:
    - 1088 instances of class cars with average precision: 0.663814
    - mAP using the weighted average of precisions among classes: 0.583137
    - mAP: 0.3916
+=======
+   - 1088 instances of class cars with average precision: 0.6626
+   - mAP using the weighted average of precisions among classes: 0.5901
+   - mAP: 0.4140
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42

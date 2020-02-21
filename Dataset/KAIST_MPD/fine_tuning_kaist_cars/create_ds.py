@@ -9,8 +9,13 @@ import glob
 #06 -> VALIDATION
 if __name__ == '__main__':
 <<<<<<< HEAD
+<<<<<<< HEAD
     sets = ['set05/V000', 'set00/V000']
     with open('./ds/train_w_people.csv', 'w' ) as csvfile:
+=======
+    sets = ['set06/V001']
+    with open('./ds/val_w_people.csv', 'w' ) as csvfile:
+>>>>>>> 19c53023491d92692b7d44f1343b74e2d6623f42
 =======
     sets = ['set06/V001']
     with open('./ds/val_w_people.csv', 'w' ) as csvfile:
