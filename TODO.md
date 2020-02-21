@@ -163,7 +163,7 @@ Prove effettuate con policy v1:
 
 Prove effettuate con policy v2:
 - [x] epoca 05:
-   - 755 instances of class person with average precision: *0.5241*
+   - 755 instances of class person with average precision: *0.5241* (MIGLIORE SULLE PERSONE!)
    - 15 instances of class cyclist with average precision: 0.0000
    - 1088 instances of class cars with average precision: 0.6506
    - mAP using the weighted average of precisions among classes: *0.5940*
@@ -293,3 +293,25 @@ Prove effettuate con policy v2:
   - 1088 instances of class cars with average precision: 0.5399
   - mAP using the weighted average of precisions among classes: 0.5157
   - mAP: 0.3437
+
+
+## Test dei pesi migliori sulla classe PERSON (POLICY V2 EPOCA 05)
+- [x] Policy v2 epoca 05 (threshold 0.3):
+   - 647 instances of class person with average precision: 0.5084
+   - 15 instances of class cyclist with average precision: 0.0000
+   - 1088 instances of class cars with average precision: 0.6510
+   - mAP using the weighted average of precisions among classes: 0.5927
+   - mAP: 0.3865
+- [x] Policy v2 epoca 05 (threshold 0.5):
+   - 647 instances of class person with average precision: 0.4754
+   - 15 instances of class cyclist with average precision: 0.0000
+   - 1088 instances of class cars with average precision: 0.6048
+   - mAP using the weighted average of precisions among classes: 0.5518
+   - mAP: 0.3601
+
+- [x] manual_annotations08.h5(threshold 0.3):
+   - 647 instances of class person with average precision: 0.4795
+   - 15 instances of class cyclist with average precision: 0.1000
+   - 1088 instances of class cars with average precision: 0.6626
+   - mAP using the weighted average of precisions among classes: 0.5901
+   - mAP: 0.4140

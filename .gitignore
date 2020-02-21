@@ -18,6 +18,9 @@
 */RFI/frames/*frames_1*
 */RFI/frames/*frames_2*
 */RFI/frames_png*
+*/RFI/frames/logs/*
+*/RFI/test_video/*
+
 *Dataset/autoaugment*
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/images/
 Dataset/KAIST_MPD/fine_tuning_kaist_cars/random/set05/V000/annotations/
